@@ -1,5 +1,6 @@
 # change-mirror
-中国内访问一些开发所用的网站比较慢，更换对应的源，可以提高速度。
+* 中国内访问一些开发所用的网站比较慢，更换对应的源，可以提高速度。
+* 个人知识和接触面有限，欢迎大家多提issue和PR哈~~~
 
 ## npm 
 
@@ -13,7 +14,7 @@ $ npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 ### 系统自带
 * 打开系统程序“软件和更新”\(或Software & Update\), 点击“下载自”对应的下拉列表。然后选择“其他”。弹出的对话框右侧，点击“选择最好的服务器”。程序会自动帮你选择附近速度最快的源。
-![程序界面示意图](./Ubuntu-op1.png)
+![程序界面截图](https://github.com/ginhton/change-mirror/raw/master/Ubuntu-op1.png)
 
 ## spacemacs
 
@@ -77,3 +78,12 @@ $ docker pull registry.docker-cn.com/myname/myrepo:mytag
 * 当您的Docker版本较旧时,只能根据系统的不同修改对应的配置文件了。具体可查看[链接](https://help.aliyun.com/document_detail/60750.html)。
 * 对应的加速器地址，需要登陆阿里云控制台后，到[容器镜像服务控制台](https://cr.console.aliyun.com/)查看。
 
+
+## Yarn
+
+### 淘宝源
+* 使用下面的命令来设置使用淘宝源。
+```bash
+yarn config set regsitry https://registry.npm.taobao.org -g
+yarn config set sass_binary_site http://cdn.npm.taobao.org/dist/note-sass -g
+```
