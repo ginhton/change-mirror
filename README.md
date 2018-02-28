@@ -87,3 +87,16 @@ $ docker pull registry.docker-cn.com/myname/myrepo:mytag
 yarn config set regsitry https://registry.npm.taobao.org -g
 yarn config set sass_binary_site http://cdn.npm.taobao.org/dist/note-sass -g
 ```
+
+## Anaconda
+
+### 清华源
+* [Anaconda安装包](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/)
+* [镜像主页](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/)
+* 通过以下命令添加Anaconda仓库的镜像：
+```bash
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --set show_channel_urls yes
+```
+
